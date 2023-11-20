@@ -44,9 +44,7 @@ public class EMSController {
 	public Employee createEmployee(@RequestBody Employee emp) {
 		return service.createEmployee(emp);
 	}
-	
-	
-	
+		
 	@PutMapping("/{id}")
     public Employee updateEmployee(@PathVariable Long id, @RequestBody Employee employee) {
 		employee.setEmpID(id);
