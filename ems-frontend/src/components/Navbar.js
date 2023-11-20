@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 export default function Navbar() {
@@ -8,7 +9,7 @@ export default function Navbar() {
         <div className="container-fluid">
           <a className="navbar-brand" href="#">Employee Management System</a>
         </div>
-        <button className='btn btn-primary mx-5' >Add Employee</button>
+        <Link className="btn btn-primary mx-2" to="/addemp">AddEmp</Link>
       </nav>
     </div>
   )
