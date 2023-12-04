@@ -5,3 +5,6 @@ target/
 *.war
 *.ear
 *.zip
+
+
+.DS_Store
