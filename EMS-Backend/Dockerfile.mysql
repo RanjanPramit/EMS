@@ -1,0 +1,13 @@
+# Use an official MySQL image as a parent image
+FROM mysql:8
+
+# Set the root password
+ENV MYSQL_ROOT_PASSWORD=Root@123
+
+# Create a database and user
+ENV MYSQL_DATABASE=mydb
+ENV MYSQL_USER=appuser
+ENV MYSQL_PASSWORD=Appuser@123
+
+# Expose the default MySQL port
+EXPOSE 3306

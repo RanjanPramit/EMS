@@ -11,13 +11,13 @@ export default function Home() {
   }, []);
 
   const loadEmp = async () => {
-    const result = await axios.get("http://localhost:8080/api/ems/emp");
+    const result = await axios.get("http://3.95.250.195:8080/api/ems/emp");
     console.log(result.data);
     setEmp(result.data);
   };
 
   const deleteEmp = async (empID) => {
-    await axios.delete(`http://localhost:8080/api/ems/${empID}`);
+    await axios.delete(`http://3.95.250.195:8080/api/ems/${empID}`);
     loadEmp();
   };
 

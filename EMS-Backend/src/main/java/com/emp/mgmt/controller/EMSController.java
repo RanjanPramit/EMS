@@ -19,7 +19,7 @@ import com.emp.mgmt.service.EMSService;
 
 @RestController
 @RequestMapping("/api/ems")
-@CrossOrigin("http://localhost:3000/")
+@CrossOrigin("*")
 public class EMSController {
 	
 	@Autowired

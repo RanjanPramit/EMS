@@ -21,12 +21,12 @@ export default function EditEmp() {
 
   const editEmp = async (e) => {
     e.preventDefault();
-    await axios.put(`http://localhost:8080/api/ems/${empID}`, emp);
+    await axios.put(`http://3.95.250.195:8080/api/ems/${empID}`, emp);
     navigate("/");
   };
 
   const loadEmp = async () => {
-    const result = await axios.get(`http://localhost:8080/api/ems/${empID}`);
+    const result = await axios.get(`http://3.95.250.195:8080/api/ems/${empID}`);
     setEmp(result.data);
   };
 

@@ -15,7 +15,7 @@ export default function AddEmp() {
 
   const saveEmp = async (e) => {
     e.preventDefault();
-    await axios.post("http://localhost:8080/api/ems", emp);
+    await axios.post("http://3.95.250.195:8080/api/ems", emp);
     navigate("/");
   };
 
